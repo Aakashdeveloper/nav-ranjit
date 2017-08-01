@@ -3,12 +3,17 @@ function Dog(breed){
     this.legs = 4
 }
 
-
-var pug = new Dog("pug");
-pug.bark=function(){
-    console.log("booooooo")
+Dog.prototype.bark=function(){
+     console.log("booooooo")
 }
 
+
+var pug = new Dog("pug");
+pug.bark();
+
+
+
+var buddy = new Dog("aabc");
 
 
 
