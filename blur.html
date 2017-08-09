@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function myfun(){
+                alert("hiiiiiiiiiiii")
+            }
+            function mypphone(){
+                var a = document.getElementById("phone");
+                if(a.value.length >10){
+                    alert("enter less char");
+                }
+                else{
+                    alert("good to go");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="fname" onblur="myfunction()"><br>
+         <input type="text" id="phone" onblur="mypphone()"><br>
+        <input type="submit" value="Submit" onclick="myfun()">
+
+
+        <script>
+            function myfunction(){
+                var a = document.getElementById("fname");
+                a.value=a.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

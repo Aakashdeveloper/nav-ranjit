@@ -1,0 +1,23 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="number" id="first">
+		<input type="number" id="second">
+		<input type="Submit" onclick="add()" value="Add">
+
+
+		<script>
+			function add(){
+				var a = parseInt(document.getElementById("first").value);
+				var b = parseInt(document.getElementById("second").value);
+				if(isNaN(a)==false && isNaN(b)==false){
+					var sum = a+b
+				alert("sum is"+sum)
+				}else{
+					alert("enter numeric value");
+				}
+			}
+		</script>
+	</body>
+</html>
