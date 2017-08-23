@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .red{
+                color:red;
+                font-size: 50px
+            }
+            .yellow{
+                color:yellow;
+                font-size:100px
+            }
+        </style>
+        <script>
+            /*function redme(){
+                $('.changeMe').removeClass('yellow')
+                $('.changeMe').addClass('red');
+            }
+            function yellowme(){
+                $('.changeMe').removeClass('red')
+                $('.changeMe').addClass('yellow');
+            }
+             function yellowme(){
+                $('.changeMe').removeClass('red')
+                $('.changeMe').removeClass('yellow');
+            }*/
+            $(document).ready(function(){
+                $("#red").click(function(){
+                    $(".changeMe").css(red,white)
+
+
+                });
+                
+
+            })
+
+        </script>
+    </head>
+
+    <body>
+      <div class="changeMe">This is html text with Jquery</div>
+      <input type="button"  value="red" id="red">
+      <input type="button" value="yellow" id="yellow">
+       <input type="button"  value="reset">
+    </body>
+</html>
